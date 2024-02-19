@@ -1,15 +1,15 @@
-
+import '../App.css'
 
 const ItemNoticias = ({item}) => {
     const websiteUrl= item.url
-    const website= websiteUrl.split('http://').pop().split('/')[0]
+    //const website= websiteUrl.split('http://').pop().split('/')[0]
 
     const date = item.publishedAt
     const formatDate = date.replace('T', '')
     const formatTime = formatDate.replace('Z', '')
 
     return (
-        <a href="" className="article">
+        <a href= {item.url} className="article"> 
             <div className="article-image">
                 <img src={item.urlToImage} alt={item.title} />
 

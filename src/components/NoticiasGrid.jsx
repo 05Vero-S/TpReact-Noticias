@@ -1,6 +1,5 @@
 import ItemNoticias from "./ItemNoticias";
-
-
+import '../App.css'
 const NoticiasGrid = ({items}) => {
     return (
         <div className="noticiasGrid">
@@ -10,6 +9,6 @@ const NoticiasGrid = ({items}) => {
             
         </div>
     );
-};
+}; 
 
 export default NoticiasGrid;

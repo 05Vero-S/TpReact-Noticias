@@ -1,4 +1,4 @@
-
+import '../App.css'
 
 const Menu = ({active, setActive, setCategory}) => {
 
